@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  label,#submit,#select{
+    color: blue;
+  }    
+    </style>
+  <link rel="stylesheet" href="Contact Us.css">
+  <title>Contacts us </title>
+</head>
+<body >
+  <form action="register.php" method="POST">
+  <h1>CONTACT US</h1>
+  <table  style="width:100%;max-width:550px;border:0;" cellpadding="11" cellspacing="0"><tr><td> 
+    <label for="name"> FirstName:</label></td>
+<td>
+   <input type="text" id="name"> </td>
+  </tr> <tr><td>
+   <label for="sname"> Surname:</label></td><td>
+   <input type="text" id="sname" style="width:100%;max-width:250px;" ></td> </tr>
+   <tr><td>
+     <label for="reg"> RegNumber:</label></td>
+   <td><input type="text" id="reg" style="width:100%;max-width:250px;" ></td></tr>
+  <tr><td>
+   <label for="phone"> PhoneNumber:</label></td><td>
+   <input type="text" id="phone" style="width:100%;max-width:250px;" > </td></tr>
+   <tr>
+   <td> <label for="email"> Email Address:</label></td><td>
+   <input type="email" id="email" style="width:100%;max-width:250px;" ></td></tr>
+   <tr><td>
+   <label for="comment"> Comments: </label></td><td>
+   <textarea name="comment" id="comment" rows="7" cols="40" style="width:100%;max-width:350px;"  ></textarea></td></tr>
+   <tr></table>
+    <label for="t">Gender:</label>
+<td id="t"> </td><td><br>
+  <label for="gender"> Male</label>
+   <input type="radio" name="radio" id="gender">
+  <label for="gender"> Female</label>
+   <input type="radio" name="radio" id="gender"> </td></tr><br><br>
+
+   <!--drop down menu-->
+   <label for="t2"> Year:</label>
+   <tr> <td id="t2"></td><td>
+   <select name="year" id="select">
+<option value="one">1</option>
+<option value="two">2</option>
+<option value="three">3</option>
+<option value="four">4</option>
+<option value="five">5</option>
+   </select> </td></tr><br>
+   <tr>   <td><br>
+<input type="submit" id="submit">
+</td><td>
+<!--<input type="reset" id="reset">-->
+</td>
+</tr>
+
+</form>
+</body>
+</html>
